@@ -22,7 +22,7 @@ function liriApp(appName, titleName) {
   var commandLiri;
   var commandParameter;
 }
-switch (appName){
+switch (liriApp){
   case "my-tweets":
     var cliet = new Twitter({
       consumer_key: keys.twitterKeys.consumer_key,
@@ -96,7 +96,7 @@ switch (appName){
               console.log("Plot: " + movieSearchResult.Plot);
               console.log("Actors: " + movieSearchResult.Actors);
               console.log("Rotton Tomatoes Rating: " + movieSearchResult.tomatoRating);
-              console.log("Rotton Tomatoes url: " + movieSearchResult.tomatoURL);
+              console.log("Rotton Tomatoes URL: " + movieSearchResult.tomatoURL);
               fs.appendFile("log.txt", "\n");
               fs.appendFile("log.txt",  "Title: " + movieSearchResult.Title + "\n");
               fs.appendFile("log.txt",  "ImdbRating: " + movieSearchResult.imdbRating + "\n");
@@ -105,7 +105,7 @@ switch (appName){
               fs.appendFile("log.txt",  "Plot: " + movieSearchResult.Plot + "\n");
               fs.appendFile("log.txt",  "Actors: " + movieSearchResult.Actors + "\n");
               fs.appendFile("log.txt",  "Rotton Tomatoes Rating: " + movieSearchResult.tomatoRating + "\n");
-              fs.appendFile("log.txt",  "Rotton Tomatoes url is: " + movieSearchResult.tomatoURL + "\n");
+              fs.appendFile("log.txt",  "Rotton Tomatoes URL: " + movieSearchResult.tomatoURL + "\n");
             }
           });
       break;
